@@ -6,7 +6,7 @@
 
   把wx.request封装成了Promise风格的。使用的时候使用get、post等方法即可。支持添加拦截器，可以单独设置header、token、baseUrl等。下面以post方法为例。
 
-  * 引入js文件：```js
+  * 引入js文件：
 
   ```
   import req from '../../utils/Request.js'
