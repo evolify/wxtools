@@ -78,7 +78,7 @@ wx.showToast({
 import Wx from 'Wx.js'
 
 Wx.showToast({
-    title: '成功',
+  title: '成功',
   icon: 'success',
   duration: 2000,
 }).then(()=>{
