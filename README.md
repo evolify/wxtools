@@ -88,3 +88,17 @@ Wx.showToast({
 })
 ```
 &emsp; 其他的api用法都一样，方法、参数、返回值可以参考官方文档。如果有错误或者有缺失的，欢迎提issue.
+
+- ### 定时任务队列
+
+  &emsp;有些场景，我们需要定义一序列的延时任务，比如就界面动画而言，一些元素依次进场，并且有一定间隔，这时候如果我们直接用setTimeout, 就会遇到毁掉地狱的问题，代码很难看，且难以维护。这里封装了一个工具，可解决此类问题，具体介绍请参考文章：[js定时任务队列](https://blog.evolify.cn/2018/05/24/js定时任务队列/)，用法如下：
+
+  ```js
+  import Schedule from 'Shedule.js'
+  
+  new Schedule().task(task1)
+    .delay(1000).task(()=>this.setData({title:'Shedule'}))
+    .delay(500).task(task3)
+  ```
+
+  
