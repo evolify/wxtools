@@ -1,0 +1,9 @@
+{
+  "name": "@evolify/wxtools",
+  "private": false,
+  "version": "0.1.1",
+  "main": "index.js",
+  "repository": "git@github.com:evolify/wxtools.git",
+  "author": "孤狼 <wolf@evolify.cn>",
+  "license": "MIT"
+}
